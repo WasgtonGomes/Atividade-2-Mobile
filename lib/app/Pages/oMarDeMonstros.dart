@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ola_mundo/app/widgets/ladraoDeRaios.dart';
+import 'package:ola_mundo/app/widgets/oMarDeMonstros.dart';
 
-class LadraoDeRaios extends StatelessWidget {
+class OMarDeMonstros extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,

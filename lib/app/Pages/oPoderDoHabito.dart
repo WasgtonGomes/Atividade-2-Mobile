@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ola_mundo/app/widgets/ladraoDeRaios.dart';
+import 'package:ola_mundo/app/widgets/oPoderDoHabito.dart';
 
-class LadraoDeRaios extends StatelessWidget {
+class OPoderDoHabito extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,
@@ -17,7 +18,7 @@ class LadraoDeRaios extends StatelessWidget {
           bottom: const TabBar(
               tabs: [Text("Sobre o Livro"), Text("Mais Detalhes")]),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: [SobreoLivro(), MaisDetalhes()],
         ),
       ),

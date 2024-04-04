@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
 
 class SobreoLivro extends StatelessWidget {
+  const SobreoLivro({super.key});
+
+  @override
   Widget build(BuildContext context) {
     return Center(
       child: ListView(
-        padding: EdgeInsets.all(15),
+        padding: const EdgeInsets.all(15),
         children: [
-          Text(
+         const Text(
               ' O Ladrão de Raios, escrito por Rick Riordan, é o primeiro livro da série Percy Jackson e os Olimpianos.',
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
               )),
-          Divider(
+         const Divider(
             color: Color.fromARGB(255, 56, 21, 21),
             height: 50,
             thickness: 2,
@@ -22,16 +25,17 @@ class SobreoLivro extends StatelessWidget {
           ),
           Container(
               alignment: Alignment.center,
-              child: Column(
+              child: const Column(
                 children: [
                   Image(
-                    image: AssetImage('ead/lib/app/imagens/The-Lightning-Thief.webp'),
+                    image: NetworkImage('https://static.wikia.nocookie.net/percyjackson/images/4/40/The-Lightning-Thief.jpg/revision/latest?cb=20120918174212&path-prefix=pt'),
+                
                   ),
                 ],
               )),
           Container(
-            padding: EdgeInsets.only(top: 20),
-            child: Row(
+            padding: const EdgeInsets.only(top: 20),
+            child: const Row(
               children: [
                 Expanded(
                   child: Text(
@@ -51,20 +55,22 @@ class SobreoLivro extends StatelessWidget {
 }
 
 class MaisDetalhes extends StatelessWidget {
+  const MaisDetalhes({super.key});
+
   Widget build(BuildContext context) {
     return Center(
       child: ListView(
-         padding: EdgeInsets.all(15),
+         padding: const EdgeInsets.all(15),
         children: [
-          Text('Descrição do Livro',
+          const Text('Descrição do Livro',
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
                 fontSize: 35,
               )),
           Container(
-            padding: EdgeInsets.only(top: 20),
-            child: Column(
+            padding: const EdgeInsets.only(top: 20),
+            child:const Column(
               children: [
                 Text(
                   '"E se os deuses do Olimpo estivessem vivos no século XXI? E se eles ainda '
@@ -89,7 +95,7 @@ class MaisDetalhes extends StatelessWidget {
 
           Container(
          
-            child: Column(
+            child: const Column(
               children: [
                 Text(
                   'Percy Jackson é um garoto de doze anos diagnosticado com TDAH e dislexia,'

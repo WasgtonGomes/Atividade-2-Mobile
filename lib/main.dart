@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:ola_mundo/app/Pages/oMarDeMonstros.dart';
 import 'app/Pages/home.dart';
 import 'app/Pages/exemplo1.dart';
+import 'app/Pages/ladraDeRaios.dart';
+import 'app/Pages/InfernoDanBrow.dart';
+import 'app/Pages/oPoderDoHabito.dart';
 
 main() {
   runApp(Principal());
@@ -29,7 +33,10 @@ class Principal extends StatelessWidget {
         '/principal': (context) => Principal(),
         '/home': (context) => Home(),
         '/exemplo': (context) => Exemplo(),
-        '/ladraDeRaios': (context) => Exemplo(),
+        '/ladraDeRaios': (context) => LadraoDeRaios(),
+        '/oMarDeMonstros': (context) => OMarDeMonstros(),
+        '/oInfernoDanBrow': (context) => OInfernoDanBrow(),
+        '/oPoderDoHabito': (context) => OPoderDoHabito(),
       },
       initialRoute: '/home',
     );
